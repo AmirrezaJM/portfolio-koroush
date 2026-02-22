@@ -6,7 +6,7 @@ export default function Home() {
     <main className="relative min-h-screen bg-background text-foreground">
 
       {/* Sections */}
-      <Hero />
+      {/* <Hero />
       <SectionDivider />
       <About />
       <SectionDivider />
@@ -16,7 +16,7 @@ export default function Home() {
       <SectionDivider />
       <Projects />
       <Testimonials />
-      <Contact />
+      <Contact /> */}
     </main>
   );
 }
