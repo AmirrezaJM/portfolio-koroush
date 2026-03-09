@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import SectionDivider from "@/features/SectionDivider";
+import Services from "@/features/Services";
 // "use client";
 // "use sever";
 export default function Home() {
@@ -6,13 +8,13 @@ export default function Home() {
     <main className="relative min-h-screen bg-background text-foreground">
 
       {/* Sections */}
-      {/* <Hero />
+      {/* <Hero /> */}
       <SectionDivider />
-      <About />
+      {/* <About /> */}
       <SectionDivider />
       <Services />
       <SectionDivider />
-      <WhyChoose />
+      {/* <WhyChoose />
       <SectionDivider />
       <Projects />
       <Testimonials />
