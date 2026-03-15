@@ -1,24 +1,26 @@
-import { Button } from "@/components/ui/button";
 import SectionDivider from "@/features/SectionDivider";
+import Hero from "@/features/Hero";
+import About from "@/features/About";
 import Services from "@/features/Services";
-// "use client";
-// "use sever";
+import WhyChoose from "@/features/WhyChoose";
+import Contact from "@/features/Contact";
+
 export default function Home() {
   return (
     <main className="relative min-h-screen bg-background text-foreground">
 
       {/* Sections */}
-      {/* <Hero /> */}
+      <Hero />
       <SectionDivider />
-      {/* <About /> */}
+      <About />
       <SectionDivider />
       <Services />
       <SectionDivider />
-      {/* <WhyChoose />
+      <WhyChoose />
       <SectionDivider />
-      <Projects />
-      <Testimonials />
-      <Contact /> */}
+      {/* <Projects />
+      <Testimonials /> */}
+      <Contact />
     </main>
   );
 }

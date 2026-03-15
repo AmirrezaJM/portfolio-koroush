@@ -1,9 +1,10 @@
-import { LucideIcon, Code, PenTool, Layout, Smartphone, Globe, Database } from "lucide-react";
+import { Code, PenTool, Layout, Smartphone, Globe, Database } from "lucide-react";
+import FeatureCard from "@/components/common/FeatureCard";
 
 interface ServiceProps {
     title: string;
     description: string;
-    Icon: LucideIcon;
+    Icon: typeof Code;
 }
 
 const servicesData: ServiceProps[] = [
@@ -57,26 +58,12 @@ export default function Services() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {servicesData.map((service, index) => (
-                        <div
+                        <FeatureCard
                             key={index}
-                            className="group relative p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:hover:shadow-[0_8px_30px_rgba(255,255,255,0.02)] overflow-hidden"
-                        >
-                            {/* Subtle hover gradient */}
-                            <div className="absolute inset-0 bg-linear-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-                            <div className="relative z-10 flex flex-col h-full space-y-6">
-                                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-                                    <service.Icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
-                                </div>
-
-                                <div className="space-y-3">
-                                    <h4 className="text-xl font-semibold tracking-tight">{service.title}</h4>
-                                    <p className="text-muted-foreground leading-relaxed">
-                                        {service.description}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                            title={service.title}
+                            description={service.description}
+                            Icon={service.Icon}
+                        />
                     ))}
                 </div>
             </div>
