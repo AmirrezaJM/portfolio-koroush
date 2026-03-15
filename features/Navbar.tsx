@@ -3,6 +3,8 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
+
+// mock data
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
@@ -15,9 +17,9 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-background/80 backdrop-blur-xl border-b border-border/40`}
     >
-      <div className="mx-auto flex items-center justify-between px-6 py-4 lg:px-12 max-w-[1440px]">
+      <div className="mx-auto flex items-center justify-between px-6 py-4 lg:px-12 max-w-7xl">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
           <div className="w-8 h-8 bg-accent rounded-sm flex items-center justify-center group-hover:scale-110 transition-transform">

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowDown } from "lucide-react";
 import SocialLinks from "@/components/common/SocialLinks";
+import FloatingLines from "@/components/common/FloatingLines";
 
 export default function Hero() {
     return (
@@ -8,12 +9,15 @@ export default function Hero() {
             id="hero"
             className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
         >
-            {/* Background decorative elements */}
-            <div className="absolute top-20 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10 pointer-events-none" />
-            <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-accent/5 rounded-full blur-3xl -z-10 pointer-events-none" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/2 rounded-full blur-3xl -z-10 pointer-events-none" />
+            {/* Background elements */}
+            <div className="absolute inset-0 -z-10 opacity-60 dark:opacity-40">
+                <FloatingLines
+                    animationSpeed={0.8}
+                    parallaxStrength={0.1}
+                />
+            </div>
 
-            <div className="container mx-auto px-6 max-w-[1440px]">
+            <div className="container mx-auto px-6 max-w-7xl">
                 <div className="flex flex-col items-center text-center space-y-8">
                     {/* Status badge */}
                     <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-border/50 bg-card/50 backdrop-blur-sm">

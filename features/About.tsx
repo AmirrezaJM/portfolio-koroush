@@ -1,6 +1,7 @@
 import { Briefcase, GraduationCap, MapPin, Sparkles } from "lucide-react";
 import Highlights, { HighlightItem } from "@/components/common/Highlights";
 
+// mock data
 const highlights: HighlightItem[] = [
     {
         Icon: Briefcase,
@@ -31,7 +32,7 @@ export default function About() {
             <div className="absolute top-0 right-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl -z-10 pointer-events-none" />
             <div className="absolute bottom-1/3 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -z-10 pointer-events-none" />
 
-            <div className="container mx-auto px-6 max-w-[1440px]">
+            <div className="container mx-auto px-6 max-w-7xl">
                 {/* Section header */}
                 <div className="flex flex-col items-center mb-16 space-y-4 text-center">
                     <h2 className="text-sm font-mono tracking-widest text-primary uppercase">
