@@ -3,6 +3,8 @@ import Hero from "@/features/Hero";
 import About from "@/features/About";
 import Services from "@/features/Services";
 import WhyChoose from "@/features/WhyChoose";
+import Projects from "@/features/Projects";
+import Testimonials from "@/features/Testimonials";
 import Contact from "@/features/Contact";
 
 export default function Home() {
@@ -18,8 +20,10 @@ export default function Home() {
       <SectionDivider />
       <WhyChoose />
       <SectionDivider />
-      {/* <Projects />
-      <Testimonials /> */}
+      <Projects />
+      <SectionDivider />
+      <Testimonials />
+      <SectionDivider />
       <Contact />
     </main>
   );

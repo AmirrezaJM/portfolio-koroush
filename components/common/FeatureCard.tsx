@@ -29,3 +29,9 @@ export default function FeatureCard({ title, description, Icon }: FeatureCardPro
         </div>
     );
 }
+
+
+// SHADCN-UI
+// THEME_provider - caching-rendering - dark, light mode - custom hooks 
+
+// fetch data - API calls 
